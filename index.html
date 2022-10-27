@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup From Project - The Odin Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div id="page_container">
@@ -24,10 +27,38 @@
             </div>
             <div id="form_container">
                 <p>Let's do this!</p>
-
+                <form action="#">
+                    <div class="label_input_group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Thor" name="first_name">
+                    </div>
+                    <div class="label_input_group">
+                        <label for="last_name">Last name</label>
+                        <input type="text" id="last_name" placeholder="Odison">
+                    </div>
+                    <div class="label_input_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="label_input_group">
+                        <label for="phone_number">Phone number</label>
+                        <input type="tel" id="phone_number" minlength="9" maxlength="9">
+                    </div>
+                    <div class="label_input_group">
+                        <label for="password">Password</label>
+                        <input type="text" id="password">
+                    </div>
+                    <div class="label_input_group">
+                        <label for="confirm_password">Confirm password</label>
+                        <input type="text" id="confirm_password">
+                    </div>
+                </form>
             </div>
             <div id="button_container">
-                
+                <button>Create Account</button>
+                <div class="text_btn_section">
+                    <p>Already have an account?</p> <a href="#">Log in</a>
+                </div>
             </div>
         </main>
     </div>
